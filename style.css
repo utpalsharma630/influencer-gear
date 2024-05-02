@@ -132,23 +132,74 @@ nav ul li a {
 .rating-star{
     color:#FB8200 ;
 }
+.see-more-btn{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ee528b;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: white;
+    margin-top: 40px;
+    
+    
+}
+.Featured-place{
+    display: flex;
+    max-width: 1110px;
+    align-items: center;
+    gap: 40px;
+    margin:40px auto;
+}
+.Featured-place-title{
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #0A0826;
+}
+.Featured-place-description{
+    font-size: 1rem;
+    font-weight: bold;
+    color:#6C6C6C ;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+.footer-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.footer-description, p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #D9DBE1;
+}
+
+
+
+
 
 
 /* responsive start */
 @media screen and (max-width:576px) {
-    nav{
+    nav
+    {
         flex-direction: column;
     }
     nav>ul{
         flex-direction: column;
         align-items: center;
     }
-    .influencer{
+    .influencer
+    {
         flex-direction: column-reverse;
         background-position: center;
         margin-top: -280px;
-      
-        
+    }
+    .Featured-place{
+        flex-direction: column-reverse;
     }
     .sellar{
         
