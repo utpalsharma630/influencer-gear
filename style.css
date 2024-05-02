@@ -9,6 +9,7 @@ body{
 header{
     width: 1200px;
     margin: auto;
+    
 }
 nav{
    display: flex; 
@@ -30,4 +31,47 @@ nav ul li a {
 .nav-title{
     font-size: 1.8rem;
     font-weight: 700;
+}
+.influencer{
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    background-image: url('images/bg.png');
+    background-repeat: no-repeat;
+    background-position:right bottom;
+    background-size: 410px;
+
+}
+.bg-img{
+    margin-left: 135px;
+}
+.influencer-title{
+    font-size: 4.25rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.influencer-description{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.btn-primary{
+    font-size: 1rem;
+    font-weight: bold;
+    background-color:#E02C6D ;
+    border-radius: 10px;
+    color: white;
+    padding: 12px;
+    border: none;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.sellar{
+    max-width: 1110px;
+    margin:120px auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-around;
 }
