@@ -72,8 +72,9 @@ nav ul li a {
     max-width: 1110px;
     margin:120px auto;
     display: grid;
+    gap: 25px;
     grid-template-columns: repeat(7,1fr);
-    
+
     align-items: center;
     justify-content: space-around;
 }
@@ -84,7 +85,7 @@ nav ul li a {
     margin-bottom: 50px;
 }
 .popular-collection{
-    max-width: 1050px;
+    max-width: 1100px;
     margin: 20px auto;
    
     
@@ -97,10 +98,40 @@ nav ul li a {
 .card{
     max-width: 330px;
     border: 4px solid whitesmoke;
-    padding: 20px;
+    padding: 8px;
     
 }
+.card .img{
+    max-width: 300px;
+    margin:0 auto;
+    padding: 0;
+}
+.card-title{
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #18191F;
+}
+.price{
+    font-size: 1.5rem;
+    margin: 0;
+    color: #5f5b5b;
 
+}
+.rating,.card-description{
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #5E6366;
+    margin-bottom: 5px;
+    
+}
+.card-description{
+    color:#787885 ;
+    margin: 0;
+}
+.rating-star{
+    color:#FB8200 ;
+}
 
 
 /* responsive start */
@@ -121,10 +152,11 @@ nav ul li a {
     }
     .sellar{
         
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
         text-align: center;
-        margin-left: 3px;
+        
         margin-bottom: 200px;
+        justify-content: stretch;
         
     }
     .bg-img{
@@ -135,5 +167,32 @@ nav ul li a {
         max-width: 350px;
       
     }
+    .card-popular-collection{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .card{
+        margin: auto;
+    }
    
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav
+    {
+        flex-direction: column;
+    }
+    
+    .card-popular-collection{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .card{
+        margin: auto;
+    }
+    .bg-img {
+        margin-left: 0px;
+    }
+    .sellar{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
